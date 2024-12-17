@@ -1,9 +1,9 @@
 import React from 'react'
 import { render, screen, fireEvent, waitFor } from '@testing-library/react'
-import IssueCard from './IssueCard'
-import { issueNewCard } from '../actions'
+import IssueCard from '../app/components/IssueCard'
+import { issueNewCard } from '@/app/actions'
 
-jest.mock('../actions')
+jest.mock('../app/actions')
 
 describe('IssueCard', () => {
     test('renders IssueCard component', () => {

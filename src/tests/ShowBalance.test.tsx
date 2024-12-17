@@ -1,15 +1,15 @@
 import React from 'react'
 import { render, screen, fireEvent, waitFor } from '@testing-library/react'
-import ShowBalance from './ShowBalance'
-import { getCardBalance } from '../actions'
+import ShowBalance from '../app/components/ShowBalance'
+import { getCardBalance } from '@/app/actions'
 
-jest.mock('../actions')
+jest.mock('../app/actions')
 
 describe('ShowBalance', () => {
     test('renders ShowBalance component', () => {
         render(<ShowBalance />)
         expect(screen.getByText('Show Balance')).toBeInTheDocument()
-        expect(screen.getByPlaceholderText('Card ID')).toBeInTheDocument()
+        expect(screen.getByPlaceholderText('Card Number')).toBeInTheDocument()
         expect(screen.getByText('Check Balance')).toBeInTheDocument()
     })
 

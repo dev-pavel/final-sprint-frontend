@@ -1,4 +1,4 @@
-import { issueNewCard, getAllCards, topUpCard, payWithCard, getCardBalance, getCardHistory } from './actions'
+import { issueNewCard, getAllCards, topUpCard, payWithCard, getCardBalance, getCardHistory } from '@/app/actions'
 import fs from 'fs/promises'
 
 jest.mock('fs/promises')
